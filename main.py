@@ -134,16 +134,21 @@ TEST_EMAILS: List[EmailSample] = [
 ]
 
 
-def call_ollama(
-    prompt: str, model_name: str, system_prompt: Optional[str] = None
-) -> str:
+def call_ollama(prompt: str, model_name: str, system_prompt: str) -> str:
     """Call Ollama API with given prompt, model and optional system prompt."""
     # Default system prompt if none is provided
     if not system_prompt:
         system_prompt = "You are a helpful AI assistant."
 
-    # Format using common template
-    prompt_template = f"<|begin_of_text|><|system|>\n{system_prompt}\n<|user|>\n{prompt}\n<|assistant|>"
+    # Format using model-specific template
+    if model_name.startswith("llama3"):
+        prompt_template = f"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{system_prompt}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+    elif model_name.startswith("mistral"):
+        prompt_template = f"[INST] {system_prompt}\n\n{prompt} [/INST]"
+    elif model_name.startswith("gemma"):
+        prompt_template = f"<start_of_turn>user\n{system_prompt}\n\n{prompt}<end_of_turn>\n<start_of_turn>model"
+    else:
+        prompt_template = f"{system_prompt}\n\n{prompt}"
 
     request_data = OllamaRequest(model=model_name, prompt=prompt_template)
 
@@ -434,6 +439,7 @@ def create_phishing_analysis_result(
         timestamp=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     )
 
+
 def unload_model(model_name: str) -> bool:
     url = "http://localhost:11434/api/generate"
     payload = {"model": model_name, "keep_alive": 0}
@@ -446,6 +452,7 @@ def unload_model(model_name: str) -> bool:
     except requests.exceptions.RequestException as e:
         print(f"Failed to unload model '{model_name}': {e}")
         return False
+
 
 def run_experiment() -> List[PhishingAnalysisResult]:
     """Run the full experiment with all techniques, models on all test emails."""
@@ -664,7 +671,7 @@ def create_visualizations(
 if __name__ == "__main__":
     print("=== Phishing Detection Prompt Engineering Experiment ===")
     print(f"Using models: {', '.join(MODELS)}")
-    
+
     # Check if Ollama is running
     try:
         test_response = requests.get("http://localhost:11434/api/version")
@@ -676,4 +683,6 @@ if __name__ == "__main__":
             print("Ollama seems to be running but returned an unexpected response.")
     except Exception as e:
         print(f"Error connecting to Ollama: {e}")
-        print("Please make sure Ollama is installed and running on http://localhost:11434")
+        print(
+            "Please make sure Ollama is installed and running on http://localhost:11434"
+        )
