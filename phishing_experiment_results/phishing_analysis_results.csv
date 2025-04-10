@@ -1,0 +1,196 @@
+email_id,model_name,ground_truth_is_phishing,ground_truth_content,predicted_is_phishing,prompt_technique,result_file,timestamp
+phish_1,llama3:8b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_phish_1_llama3:8b_20250410_142510.txt,2025-04-10 14:25:10
+phish_1,llama3:8b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Few-Shot,phishing_experiment_results/Few-Shot_phish_1_llama3:8b_20250410_142520.txt,2025-04-10 14:25:20
+phish_1,llama3:8b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_phish_1_llama3:8b_20250410_142535.txt,2025-04-10 14:25:35
+phish_1,llama3:8b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_phish_1_llama3:8b_20250410_142607.txt,2025-04-10 14:26:07
+phish_1,llama3:8b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Two-Step,phishing_experiment_results/Two-Step_phish_1_llama3:8b_20250410_142627.txt,2025-04-10 14:26:27
+phish_2,llama3:8b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_phish_2_llama3:8b_20250410_142639.txt,2025-04-10 14:26:39
+phish_2,llama3:8b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Few-Shot,phishing_experiment_results/Few-Shot_phish_2_llama3:8b_20250410_142649.txt,2025-04-10 14:26:49
+phish_2,llama3:8b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_phish_2_llama3:8b_20250410_142706.txt,2025-04-10 14:27:06
+phish_2,llama3:8b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_phish_2_llama3:8b_20250410_142742.txt,2025-04-10 14:27:42
+phish_2,llama3:8b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Two-Step,phishing_experiment_results/Two-Step_phish_2_llama3:8b_20250410_142805.txt,2025-04-10 14:28:05
+legit_1,llama3:8b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,AUTOMATE,phishing_experiment_results/AUTOMATE_legit_1_llama3:8b_20250410_142813.txt,2025-04-10 14:28:13
+legit_1,llama3:8b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Few-Shot,phishing_experiment_results/Few-Shot_legit_1_llama3:8b_20250410_142820.txt,2025-04-10 14:28:20
+legit_1,llama3:8b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",False,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_legit_1_llama3:8b_20250410_142832.txt,2025-04-10 14:28:32
+legit_1,llama3:8b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_legit_1_llama3:8b_20250410_142907.txt,2025-04-10 14:29:07
+legit_1,llama3:8b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Two-Step,phishing_experiment_results/Two-Step_legit_1_llama3:8b_20250410_142933.txt,2025-04-10 14:29:33
+legit_2,llama3:8b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_legit_2_llama3:8b_20250410_142943.txt,2025-04-10 14:29:43
+legit_2,llama3:8b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Few-Shot,phishing_experiment_results/Few-Shot_legit_2_llama3:8b_20250410_142950.txt,2025-04-10 14:29:50
+legit_2,llama3:8b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_legit_2_llama3:8b_20250410_143004.txt,2025-04-10 14:30:04
+legit_2,llama3:8b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_legit_2_llama3:8b_20250410_143031.txt,2025-04-10 14:30:31
+legit_2,llama3:8b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Two-Step,phishing_experiment_results/Two-Step_legit_2_llama3:8b_20250410_143055.txt,2025-04-10 14:30:55
+phish_1,mistral:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_phish_1_mistral:7b_20250410_143109.txt,2025-04-10 14:31:09
+phish_1,mistral:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Few-Shot,phishing_experiment_results/Few-Shot_phish_1_mistral:7b_20250410_143113.txt,2025-04-10 14:31:13
+phish_1,mistral:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_phish_1_mistral:7b_20250410_143124.txt,2025-04-10 14:31:24
+phish_1,mistral:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_phish_1_mistral:7b_20250410_143153.txt,2025-04-10 14:31:53
+phish_1,mistral:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Two-Step,phishing_experiment_results/Two-Step_phish_1_mistral:7b_20250410_143213.txt,2025-04-10 14:32:13
+phish_2,mistral:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_phish_2_mistral:7b_20250410_143219.txt,2025-04-10 14:32:19
+phish_2,mistral:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Few-Shot,phishing_experiment_results/Few-Shot_phish_2_mistral:7b_20250410_143223.txt,2025-04-10 14:32:23
+phish_2,mistral:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_phish_2_mistral:7b_20250410_143233.txt,2025-04-10 14:32:33
+phish_2,mistral:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_phish_2_mistral:7b_20250410_143301.txt,2025-04-10 14:33:01
+phish_2,mistral:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Two-Step,phishing_experiment_results/Two-Step_phish_2_mistral:7b_20250410_143327.txt,2025-04-10 14:33:27
+legit_1,mistral:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",False,AUTOMATE,phishing_experiment_results/AUTOMATE_legit_1_mistral:7b_20250410_143335.txt,2025-04-10 14:33:35
+legit_1,mistral:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",False,Few-Shot,phishing_experiment_results/Few-Shot_legit_1_mistral:7b_20250410_143338.txt,2025-04-10 14:33:38
+legit_1,mistral:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",False,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_legit_1_mistral:7b_20250410_143345.txt,2025-04-10 14:33:45
+legit_1,mistral:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_legit_1_mistral:7b_20250410_143413.txt,2025-04-10 14:34:13
+legit_1,mistral:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Two-Step,phishing_experiment_results/Two-Step_legit_1_mistral:7b_20250410_143443.txt,2025-04-10 14:34:43
+legit_2,mistral:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",False,AUTOMATE,phishing_experiment_results/AUTOMATE_legit_2_mistral:7b_20250410_143452.txt,2025-04-10 14:34:52
+legit_2,mistral:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",False,Few-Shot,phishing_experiment_results/Few-Shot_legit_2_mistral:7b_20250410_143455.txt,2025-04-10 14:34:55
+legit_2,mistral:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_legit_2_mistral:7b_20250410_143507.txt,2025-04-10 14:35:07
+legit_2,mistral:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",False,Multi-Prompt,phishing_experiment_results/Multi-Prompt_legit_2_mistral:7b_20250410_143532.txt,2025-04-10 14:35:32
+legit_2,mistral:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Two-Step,phishing_experiment_results/Two-Step_legit_2_mistral:7b_20250410_143557.txt,2025-04-10 14:35:57
+phish_1,gemma:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_phish_1_gemma:7b_20250410_143620.txt,2025-04-10 14:36:20
+phish_1,gemma:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Few-Shot,phishing_experiment_results/Few-Shot_phish_1_gemma:7b_20250410_143632.txt,2025-04-10 14:36:32
+phish_1,gemma:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_phish_1_gemma:7b_20250410_143649.txt,2025-04-10 14:36:49
+phish_1,gemma:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_phish_1_gemma:7b_20250410_143732.txt,2025-04-10 14:37:32
+phish_1,gemma:7b,True,"Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension.",True,Two-Step,phishing_experiment_results/Two-Step_phish_1_gemma:7b_20250410_143802.txt,2025-04-10 14:38:02
+phish_2,gemma:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_phish_2_gemma:7b_20250410_143818.txt,2025-04-10 14:38:18
+phish_2,gemma:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Few-Shot,phishing_experiment_results/Few-Shot_phish_2_gemma:7b_20250410_143827.txt,2025-04-10 14:38:27
+phish_2,gemma:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_phish_2_gemma:7b_20250410_143846.txt,2025-04-10 14:38:46
+phish_2,gemma:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_phish_2_gemma:7b_20250410_143932.txt,2025-04-10 14:39:32
+phish_2,gemma:7b,True,"Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours.",True,Two-Step,phishing_experiment_results/Two-Step_phish_2_gemma:7b_20250410_144004.txt,2025-04-10 14:40:04
+legit_1,gemma:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,AUTOMATE,phishing_experiment_results/AUTOMATE_legit_1_gemma:7b_20250410_144019.txt,2025-04-10 14:40:19
+legit_1,gemma:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Few-Shot,phishing_experiment_results/Few-Shot_legit_1_gemma:7b_20250410_144030.txt,2025-04-10 14:40:30
+legit_1,gemma:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_legit_1_gemma:7b_20250410_144045.txt,2025-04-10 14:40:45
+legit_1,gemma:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_legit_1_gemma:7b_20250410_144124.txt,2025-04-10 14:41:24
+legit_1,gemma:7b,False,"Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen",True,Two-Step,phishing_experiment_results/Two-Step_legit_1_gemma:7b_20250410_144149.txt,2025-04-10 14:41:49
+legit_2,gemma:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,AUTOMATE,phishing_experiment_results/AUTOMATE_legit_2_gemma:7b_20250410_144202.txt,2025-04-10 14:42:02
+legit_2,gemma:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Few-Shot,phishing_experiment_results/Few-Shot_legit_2_gemma:7b_20250410_144208.txt,2025-04-10 14:42:08
+legit_2,gemma:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Chain-of-Thought,phishing_experiment_results/Chain-of-Thought_legit_2_gemma:7b_20250410_144225.txt,2025-04-10 14:42:25
+legit_2,gemma:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Multi-Prompt,phishing_experiment_results/Multi-Prompt_legit_2_gemma:7b_20250410_144306.txt,2025-04-10 14:43:06
+legit_2,gemma:7b,False,"Newsletter Subscription Confirmation
+        Thank you for subscribing to The Daily Tech Digest!
+        You can update your preferences anytime using your account settings.",True,Two-Step,phishing_experiment_results/Two-Step_legit_2_gemma:7b_20250410_144332.txt,2025-04-10 14:43:32

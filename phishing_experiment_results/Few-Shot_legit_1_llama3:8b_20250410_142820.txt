@@ -1,0 +1,58 @@
+TECHNIQUE: Few-Shot
+EMAIL ID: legit_1
+MODEL: llama3:8b
+TIMESTAMP: 2025-04-10 14:28:20
+
+--- PROMPT ---
+
+
+    I want you to analyze emails for phishing attempts. Here are some examples of how to analyze them:
+
+    EXAMPLE 1:
+    Email: "Dear Customer, Your account will be suspended. Click here to verify: http://amaz0n-secure.tk"
+    Analysis:
+    - Phishing Verdict: Yes
+    - Risk Score: 8/10
+    - Identified Tactics: Urgency creation, impersonation, suspicious URL (TLD .tk)
+    - Technical Indicators: Non-corporate domain, URL mismatch, generic greeting
+    - Recommended Actions: Delete email, report to security team, do not click links
+
+    EXAMPLE 2:
+    Email: "Hi John, Attached is the Q3 budget report we discussed yesterday. Let me know if you need any clarification. Regards, Sarah - Finance Department"
+    Analysis:
+    - Phishing Verdict: No
+    - Risk Score: 2/10
+    - Identified Tactics: None identified
+    - Technical Indicators: No suspicious links, expected attachment, personalized context, sender matches expected communication pattern
+    - Recommended Actions: Normal processing, verify sender if attachment seems unusual
+
+    Now analyze this email:
+    "Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen"
+    
+
+--- RESPONSE ---
+
+Let's dive into the analysis!
+
+**Email Analysis:**
+
+**Phishing Verdict:** No
+
+**Risk Score:** 1/10
+
+**Identified Tactics:** None identified
+
+**Technical Indicators:**
+
+* The email contains a specific agenda and dial-in details, which suggests a legitimate meeting invitation.
+* The sender's name and title ("Michael Chen") are specified, indicating a personalized approach rather than a generic phishing attempt.
+* There are no suspicious links or attachments that could potentially lead to malicious content.
+
+**Recommended Actions:**
+
+1. Normal processing: Verify the email by cross-checking with your calendar or internal records to confirm whether you have an upcoming meeting scheduled with Michael Chen and his team.
+2. If the meeting details seem unusual or you're unsure about the legitimacy of the email, verify the information through alternative means (e.g., contacting Michael Chen directly or checking the company's internal calendar).
+
+Overall, this email appears to be a genuine meeting invitation from a known sender, with no red flags indicating a phishing attempt.

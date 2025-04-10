@@ -1,0 +1,41 @@
+TECHNIQUE: Few-Shot
+EMAIL ID: legit_1
+MODEL: mistral:7b
+TIMESTAMP: 2025-04-10 14:33:38
+
+--- PROMPT ---
+
+
+    I want you to analyze emails for phishing attempts. Here are some examples of how to analyze them:
+
+    EXAMPLE 1:
+    Email: "Dear Customer, Your account will be suspended. Click here to verify: http://amaz0n-secure.tk"
+    Analysis:
+    - Phishing Verdict: Yes
+    - Risk Score: 8/10
+    - Identified Tactics: Urgency creation, impersonation, suspicious URL (TLD .tk)
+    - Technical Indicators: Non-corporate domain, URL mismatch, generic greeting
+    - Recommended Actions: Delete email, report to security team, do not click links
+
+    EXAMPLE 2:
+    Email: "Hi John, Attached is the Q3 budget report we discussed yesterday. Let me know if you need any clarification. Regards, Sarah - Finance Department"
+    Analysis:
+    - Phishing Verdict: No
+    - Risk Score: 2/10
+    - Identified Tactics: None identified
+    - Technical Indicators: No suspicious links, expected attachment, personalized context, sender matches expected communication pattern
+    - Recommended Actions: Normal processing, verify sender if attachment seems unusual
+
+    Now analyze this email:
+    "Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen"
+    
+
+--- RESPONSE ---
+
+ - Phishing Verdict: No
+   - Risk Score: 1/10
+   - Identified Tactics: None identified
+   - Technical Indicators: No suspicious links, expected attachment mentioned, generic greeting but personalized context
+   - Recommended Actions: Proceed with the meeting as scheduled, verify sender and attachment if any doubts, be cautious when opening attachments from unknown sources.

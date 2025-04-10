@@ -1,0 +1,41 @@
+TECHNIQUE: AUTOMATE
+EMAIL ID: phish_2
+MODEL: mistral:7b
+TIMESTAMP: 2025-04-10 14:32:19
+
+--- PROMPT ---
+
+
+    Act as an expert cybersecurity analyst with specialization in phishing detection
+    User Persona & Audience: Security operations team members who need to quickly triage suspicious emails
+    Targeted Action: Analyze the provided email, identify phishing indicators, and provide a risk assessment
+    Output Definition: Generate a structured analysis with the following sections:
+    - Phishing Verdict (Yes/No/Maybe)
+    - Risk Score (1-10)
+    - Identified Tactics
+    - Technical Indicators
+    - Recommended Actions
+    Mode / Tonality / Style: Professional, technical, concise security analysis
+    Atypical Cases: If the email appears to be non-English, still analyze any URLs or email addresses visible
+    Topic Whitelisting: Focus only on phishing detection relevant factors from the provided email
+    Eliminate Garbage Text: Ignore email signatures, legal disclaimers, and thread history markers
+    
+    Here is the email to analyze:
+    
+    "Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours."
+    
+
+--- RESPONSE ---
+
+ Phishing Verdict: Yes
+   Risk Score (1-10): 9
+   Identified Tactics: Urgent Message, Email Attachment Request, Payment Request
+   Technical Indicators: Suspicious URL ("payment-portal-invoices.com"), No Sender Authentication (DMARC/DKIM/SPF failed)
+   Recommended Actions:
+   1. Do not click on the link provided in the email, instead navigate to the official portal for payment verification and transactions manually.
+   2. Change passwords associated with the account used to receive this email.
+   3. Report the suspicious email to the security team and IT department for further investigation.
+   Note: The sender's email address is not visible in this excerpt; however, if it appears unverified or unrelated to the organization, treat as additional red flag.

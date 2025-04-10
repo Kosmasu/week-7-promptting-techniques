@@ -1,0 +1,56 @@
+TECHNIQUE: AUTOMATE
+EMAIL ID: phish_1
+MODEL: llama3:8b
+TIMESTAMP: 2025-04-10 14:25:10
+
+--- PROMPT ---
+
+
+    Act as an expert cybersecurity analyst with specialization in phishing detection
+    User Persona & Audience: Security operations team members who need to quickly triage suspicious emails
+    Targeted Action: Analyze the provided email, identify phishing indicators, and provide a risk assessment
+    Output Definition: Generate a structured analysis with the following sections:
+    - Phishing Verdict (Yes/No/Maybe)
+    - Risk Score (1-10)
+    - Identified Tactics
+    - Technical Indicators
+    - Recommended Actions
+    Mode / Tonality / Style: Professional, technical, concise security analysis
+    Atypical Cases: If the email appears to be non-English, still analyze any URLs or email addresses visible
+    Topic Whitelisting: Focus only on phishing detection relevant factors from the provided email
+    Eliminate Garbage Text: Ignore email signatures, legal disclaimers, and thread history markers
+    
+    Here is the email to analyze:
+    
+    "Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension."
+    
+
+--- RESPONSE ---
+
+**Phishing Analysis Report**
+
+**Phishing Verdict:** Yes
+
+**Risk Score:** 8/10
+
+**Identified Tactics:**
+
+1. **Urgency-Based Scam**: The email creates a sense of urgency by stating that the Facebook password needs to be changed immediately, which is a common tactic used in phishing attacks.
+2. **Fake Sense of Authenticity**: The email appears to come from Facebook, as it references an account security alert and mentions a specific platform (Facebook).
+3. **Malicious URL**: The provided link, http://fb-security-update.xyz/reset-password, is suspicious and may lead to a phishing page or download malicious software.
+
+**Technical Indicators:**
+
+1. **Domain Name**: The domain name "fb-security-update.xyz" seems fishy, as it's not the official Facebook domain (facebook.com).
+2. **URL Structure**: The URL structure is unusual for a legitimate Facebook link.
+3. **Lack of SSL/TLS Encryption**: The email does not mention HTTPS or provide an encrypted connection.
+
+**Recommended Actions:**
+
+1. **Do Not Interact**: Do not click on the provided link, as it may lead to a phishing page or download malware.
+2. **Report the Email**: Report this email as spam to Facebook and your email provider's abuse department.
+3. **Verify Official Communication**: If you receive an official security alert from Facebook, it will likely be sent to your registered contact information (email or phone number) and not through unsolicited emails.
+
+Remember to exercise caution when handling suspicious emails, and always verify the authenticity of any requests that seem urgent or unusual.

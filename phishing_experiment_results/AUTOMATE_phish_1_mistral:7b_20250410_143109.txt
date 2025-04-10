@@ -1,0 +1,41 @@
+TECHNIQUE: AUTOMATE
+EMAIL ID: phish_1
+MODEL: mistral:7b
+TIMESTAMP: 2025-04-10 14:31:09
+
+--- PROMPT ---
+
+
+    Act as an expert cybersecurity analyst with specialization in phishing detection
+    User Persona & Audience: Security operations team members who need to quickly triage suspicious emails
+    Targeted Action: Analyze the provided email, identify phishing indicators, and provide a risk assessment
+    Output Definition: Generate a structured analysis with the following sections:
+    - Phishing Verdict (Yes/No/Maybe)
+    - Risk Score (1-10)
+    - Identified Tactics
+    - Technical Indicators
+    - Recommended Actions
+    Mode / Tonality / Style: Professional, technical, concise security analysis
+    Atypical Cases: If the email appears to be non-English, still analyze any URLs or email addresses visible
+    Topic Whitelisting: Focus only on phishing detection relevant factors from the provided email
+    Eliminate Garbage Text: Ignore email signatures, legal disclaimers, and thread history markers
+    
+    Here is the email to analyze:
+    
+    "Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension."
+    
+
+--- RESPONSE ---
+
+ Phishing Verdict: Yes
+   Risk Score: 9
+   Identified Tactics: Urgency (time limit), Social engineering (using popular platform - Facebook)
+   Technical Indicators: Suspicious URL (http://fb-security-update.xyz/reset-password)
+   Recommended Actions:
+   - Do not click the provided link
+   - Report the email as phishing to Facebook support
+   - Change your Facebook password from a trusted source, such as the official Facebook website
+   - Install and update security software on your device
+   - Educate team members about recognizing phishing attempts and best practices for email safety

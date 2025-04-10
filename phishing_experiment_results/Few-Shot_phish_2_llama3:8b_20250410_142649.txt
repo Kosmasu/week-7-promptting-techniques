@@ -1,0 +1,58 @@
+TECHNIQUE: Few-Shot
+EMAIL ID: phish_2
+MODEL: llama3:8b
+TIMESTAMP: 2025-04-10 14:26:49
+
+--- PROMPT ---
+
+
+    I want you to analyze emails for phishing attempts. Here are some examples of how to analyze them:
+
+    EXAMPLE 1:
+    Email: "Dear Customer, Your account will be suspended. Click here to verify: http://amaz0n-secure.tk"
+    Analysis:
+    - Phishing Verdict: Yes
+    - Risk Score: 8/10
+    - Identified Tactics: Urgency creation, impersonation, suspicious URL (TLD .tk)
+    - Technical Indicators: Non-corporate domain, URL mismatch, generic greeting
+    - Recommended Actions: Delete email, report to security team, do not click links
+
+    EXAMPLE 2:
+    Email: "Hi John, Attached is the Q3 budget report we discussed yesterday. Let me know if you need any clarification. Regards, Sarah - Finance Department"
+    Analysis:
+    - Phishing Verdict: No
+    - Risk Score: 2/10
+    - Identified Tactics: None identified
+    - Technical Indicators: No suspicious links, expected attachment, personalized context, sender matches expected communication pattern
+    - Recommended Actions: Normal processing, verify sender if attachment seems unusual
+
+    Now analyze this email:
+    "Invoice #INV-98452 Payment Overdue - URGENT
+        Please review the attached invoice and make payment through our secure portal:
+        https://payment-portal-invoices.com/pay-now
+        Your account will be charged automatically in 48 hours."
+    
+
+--- RESPONSE ---
+
+Based on my analysis, I conclude that this email is likely a phishing attempt. Here's my detailed assessment:
+
+**Phishing Verdict:** Yes
+**Risk Score:** 9/10
+**Identified Tactics:**
+
+1. **Urgency creation**: The email creates a sense of urgency by stating that the account will be charged automatically in 48 hours, which is intended to prompt the recipient into taking action without thinking twice.
+2. **Suspicious URL**: The payment portal URL provided (https://payment-portal-invoices.com/pay-now) appears to be a generic and untrusted domain, which may not be associated with your actual invoicing or financial services provider.
+3. **Impersonation**: The email's tone and content attempt to impersonate an official invoice notification from your organization.
+
+**Technical Indicators:**
+
+1. **Non-corporate domain**: The URL provided does not match the expected domain for your organization's invoicing system, which could be a sign of a phishing attempt.
+2. **Generic greeting**: The email lacks personalization, which is unusual for official invoice notifications from your company.
+
+**Recommended Actions:**
+
+1. **Delete the email**: Do not engage with the email or click on any links, as they may lead to malware or phishing pages.
+2. **Report to security team**: Inform your organization's security team about this potential phishing attempt to help them detect and prevent similar incidents in the future.
+
+Remember, always exercise caution when receiving unsolicited emails, especially those containing urgent requests for payment or personal information. Verify the authenticity of the email and its contents before taking any action.

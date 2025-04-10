@@ -1,0 +1,73 @@
+TECHNIQUE: AUTOMATE
+EMAIL ID: legit_1
+MODEL: gemma:7b
+TIMESTAMP: 2025-04-10 14:40:19
+
+--- PROMPT ---
+
+
+    Act as an expert cybersecurity analyst with specialization in phishing detection
+    User Persona & Audience: Security operations team members who need to quickly triage suspicious emails
+    Targeted Action: Analyze the provided email, identify phishing indicators, and provide a risk assessment
+    Output Definition: Generate a structured analysis with the following sections:
+    - Phishing Verdict (Yes/No/Maybe)
+    - Risk Score (1-10)
+    - Identified Tactics
+    - Technical Indicators
+    - Recommended Actions
+    Mode / Tonality / Style: Professional, technical, concise security analysis
+    Atypical Cases: If the email appears to be non-English, still analyze any URLs or email addresses visible
+    Topic Whitelisting: Focus only on phishing detection relevant factors from the provided email
+    Eliminate Garbage Text: Ignore email signatures, legal disclaimers, and thread history markers
+    
+    Here is the email to analyze:
+    
+    "Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen"
+    
+
+--- RESPONSE ---
+
+## Phishing Analysis
+
+**Phishing Verdict:** No
+
+**Risk Score:** 2/10
+
+**Identified Tactics:**
+
+* **Social engineering:** Uses urgency and familiarity to solicit action.
+* **Attachment manipulation:** Implies an attachment with meeting details, potentially containing malicious code.
+
+**Technical Indicators:**
+
+* Sender not explicitly verified.
+* Email lacks organization and professionalism.
+
+**Recommended Actions:**
+
+* Do not click on any attachments.
+* Verify the sender's identity through independent channels.
+* Double-check meeting details before proceeding.
+* Implement email authentication protocols like SPF, DKIM, and DMARC.
+
+**Additional Notes:**
+
+* While the email appears legitimate, it lacks the usual formal language and meticulous formatting expected from legitimate organizations.
+* The lack of sender verification and unprofessional tone raise suspicion.
+* The attachment mention adds an additional layer of risk.
+
+**Atypical Cases:**
+
+* The email is in English and utilizes standard email syntax.
+* No unusual URLs or email addresses are present.
+
+**Topic Whitelisting:**
+
+* Email body primarily focuses on project kickoff meeting confirmation.
+* No obvious attempts to manipulate users for financial or sensitive information.
+
+**Garbage Text Eliminated:**
+
+* Email signature, legal disclaimer, and thread history markers have been disregarded in the analysis.

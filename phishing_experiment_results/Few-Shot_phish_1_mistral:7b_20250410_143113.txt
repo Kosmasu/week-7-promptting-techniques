@@ -1,0 +1,41 @@
+TECHNIQUE: Few-Shot
+EMAIL ID: phish_1
+MODEL: mistral:7b
+TIMESTAMP: 2025-04-10 14:31:13
+
+--- PROMPT ---
+
+
+    I want you to analyze emails for phishing attempts. Here are some examples of how to analyze them:
+
+    EXAMPLE 1:
+    Email: "Dear Customer, Your account will be suspended. Click here to verify: http://amaz0n-secure.tk"
+    Analysis:
+    - Phishing Verdict: Yes
+    - Risk Score: 8/10
+    - Identified Tactics: Urgency creation, impersonation, suspicious URL (TLD .tk)
+    - Technical Indicators: Non-corporate domain, URL mismatch, generic greeting
+    - Recommended Actions: Delete email, report to security team, do not click links
+
+    EXAMPLE 2:
+    Email: "Hi John, Attached is the Q3 budget report we discussed yesterday. Let me know if you need any clarification. Regards, Sarah - Finance Department"
+    Analysis:
+    - Phishing Verdict: No
+    - Risk Score: 2/10
+    - Identified Tactics: None identified
+    - Technical Indicators: No suspicious links, expected attachment, personalized context, sender matches expected communication pattern
+    - Recommended Actions: Normal processing, verify sender if attachment seems unusual
+
+    Now analyze this email:
+    "Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension."
+    
+
+--- RESPONSE ---
+
+ - Phishing Verdict: Yes
+   - Risk Score: 9/10
+   - Identified Tactics: Urgency creation, impersonation, suspicious URL (TLD .xyz)
+   - Technical Indicators: Non-corporate domain, URL mismatch, generic greeting, account-related message
+   - Recommended Actions: Delete email, report to security team, do not click links or provide any personal information. It's recommended to directly log in to the Facebook account and check for any password reset requests from a trusted source (such as the official Facebook website).

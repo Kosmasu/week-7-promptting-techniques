@@ -1,0 +1,62 @@
+TECHNIQUE: Few-Shot
+EMAIL ID: phish_1
+MODEL: llama3:8b
+TIMESTAMP: 2025-04-10 14:25:20
+
+--- PROMPT ---
+
+
+    I want you to analyze emails for phishing attempts. Here are some examples of how to analyze them:
+
+    EXAMPLE 1:
+    Email: "Dear Customer, Your account will be suspended. Click here to verify: http://amaz0n-secure.tk"
+    Analysis:
+    - Phishing Verdict: Yes
+    - Risk Score: 8/10
+    - Identified Tactics: Urgency creation, impersonation, suspicious URL (TLD .tk)
+    - Technical Indicators: Non-corporate domain, URL mismatch, generic greeting
+    - Recommended Actions: Delete email, report to security team, do not click links
+
+    EXAMPLE 2:
+    Email: "Hi John, Attached is the Q3 budget report we discussed yesterday. Let me know if you need any clarification. Regards, Sarah - Finance Department"
+    Analysis:
+    - Phishing Verdict: No
+    - Risk Score: 2/10
+    - Identified Tactics: None identified
+    - Technical Indicators: No suspicious links, expected attachment, personalized context, sender matches expected communication pattern
+    - Recommended Actions: Normal processing, verify sender if attachment seems unusual
+
+    Now analyze this email:
+    "Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension."
+    
+
+--- RESPONSE ---
+
+A new phishing attempt to analyze!
+
+Email: "Account Security Alert: Your Facebook password needs to be changed immediately. 
+Click to reset: http://fb-security-update.xyz/reset-password
+Failure to respond within 12 hours will result in account suspension."
+
+Analysis:
+
+- Phishing Verdict: **Yes**
+- Risk Score: **9/10**
+- Identified Tactics:
+  - Urgency creation (time-sensitive alert)
+  - Impersonation (claiming to be Facebook)
+  - Suspicious URL (TLD .xyz, not a legitimate TLD for Facebook)
+- Technical Indicators:
+  - Non-corporate domain
+  - URL mismatch (Facebook's official URL would end in .com or .io, not .xyz)
+  - Lack of personalized greeting or context
+
+Recommendations:
+
+1. **Delete the email**: Do not click on any links or provide your password to this email.
+2. **Report it to Facebook**: Inform Facebook's security team about this phishing attempt, as they may be able to take steps to prevent further attacks.
+3. **Verify with Facebook**: If you're concerned about your account security, log in to your Facebook account directly through the app or website (not through any links sent by email). Check your account settings and notification preferences to ensure there are no unauthorized changes.
+
+Remember, phishing emails often use psychological manipulation and social engineering tactics to trick victims into revealing sensitive information. Be cautious when interacting with emails that seem too good (or urgent) to be true!

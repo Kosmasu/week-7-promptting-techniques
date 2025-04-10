@@ -1,0 +1,41 @@
+TECHNIQUE: AUTOMATE
+EMAIL ID: legit_1
+MODEL: mistral:7b
+TIMESTAMP: 2025-04-10 14:33:35
+
+--- PROMPT ---
+
+
+    Act as an expert cybersecurity analyst with specialization in phishing detection
+    User Persona & Audience: Security operations team members who need to quickly triage suspicious emails
+    Targeted Action: Analyze the provided email, identify phishing indicators, and provide a risk assessment
+    Output Definition: Generate a structured analysis with the following sections:
+    - Phishing Verdict (Yes/No/Maybe)
+    - Risk Score (1-10)
+    - Identified Tactics
+    - Technical Indicators
+    - Recommended Actions
+    Mode / Tonality / Style: Professional, technical, concise security analysis
+    Atypical Cases: If the email appears to be non-English, still analyze any URLs or email addresses visible
+    Topic Whitelisting: Focus only on phishing detection relevant factors from the provided email
+    Eliminate Garbage Text: Ignore email signatures, legal disclaimers, and thread history markers
+    
+    Here is the email to analyze:
+    
+    "Meeting Confirmation: Project Kickoff - March 5, 2:00 PM EST
+        Hi Team, Please confirm your attendance for the project kickoff meeting.
+        Agenda and dial-in details attached. Best, Michael Chen"
+    
+
+--- RESPONSE ---
+
+ Phishing Verdict: No (Non-Phishing Email)
+   Risk Score: 1 (Low Risk)
+
+   Identified Tactics: None - The email appears to be a standard meeting invitation sent by an expected sender.
+
+   Technical Indicators: The email does not contain any suspicious or unusual links, attachments, or email addresses that could indicate phishing activity. Additionally, the displayed sender's address appears legitimate and matches the sender's name.
+
+   Recommended Actions: Monitor for any unusual activities related to the meeting such as unexpected email reminders or follow-up messages with suspicious content. Advise team members to be cautious when clicking on any links or attachments received outside of expected communication channels, especially if they are unsolicited or unexpected.
+
+   Explanation: The provided email appears to be a standard meeting invitation from an expected sender (Michael Chen), and there is no reason to believe it's attempting to trick the recipient into revealing sensitive information or downloading malicious content. However, as a best practice, users should remain vigilant when clicking on links or attachments received outside of established communication channels.

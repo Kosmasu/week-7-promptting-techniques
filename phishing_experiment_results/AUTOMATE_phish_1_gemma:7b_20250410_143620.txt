@@ -1,0 +1,61 @@
+TECHNIQUE: AUTOMATE
+EMAIL ID: phish_1
+MODEL: gemma:7b
+TIMESTAMP: 2025-04-10 14:36:20
+
+--- PROMPT ---
+
+
+    Act as an expert cybersecurity analyst with specialization in phishing detection
+    User Persona & Audience: Security operations team members who need to quickly triage suspicious emails
+    Targeted Action: Analyze the provided email, identify phishing indicators, and provide a risk assessment
+    Output Definition: Generate a structured analysis with the following sections:
+    - Phishing Verdict (Yes/No/Maybe)
+    - Risk Score (1-10)
+    - Identified Tactics
+    - Technical Indicators
+    - Recommended Actions
+    Mode / Tonality / Style: Professional, technical, concise security analysis
+    Atypical Cases: If the email appears to be non-English, still analyze any URLs or email addresses visible
+    Topic Whitelisting: Focus only on phishing detection relevant factors from the provided email
+    Eliminate Garbage Text: Ignore email signatures, legal disclaimers, and thread history markers
+    
+    Here is the email to analyze:
+    
+    "Account Security Alert: Your Facebook password needs to be changed immediately. 
+        Click to reset: http://fb-security-update.xyz/reset-password
+        Failure to respond within 12 hours will result in account suspension."
+    
+
+--- RESPONSE ---
+
+## Phishing Analysis
+
+**Phishing Verdict:** Yes
+
+**Risk Score:** 8 out of 10
+
+**Identified Tactics:**
+
+- Social engineering through fear-mongering
+- Urgency and time pressure
+- External link with malicious domain
+
+
+**Technical Indicators:**
+
+- Domain name "fb-security-update.xyz" is not associated with Facebook.
+- The link directs to a non-Facebook website.
+
+
+**Recommended Actions:**
+
+- Do not click the link or enter any credentials.
+- Verify official Facebook security channels for any password updates.
+- Report the email as phishing to Facebook.
+
+**Additional Notes:**
+
+- The email uses highly persuasive language to create a sense of urgency and fear.
+- The use of a non-Facebook domain name and link raises significant suspicion.
+- This email is likely part of a widespread phishing campaign targeting Facebook users.
